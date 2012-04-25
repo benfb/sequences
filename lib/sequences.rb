@@ -15,7 +15,7 @@ module Sequences
       first = gets.chomp.to_i
       puts 'What is the difference?'
       diff = gets.chomp.to_i
-      find_term(term, first, diff)
+      self.find_term(term, first, diff)
       puts 'The ' + term.to_s + 'th/rd/st term of the sequence is ' + @solution.to_s + '.'
     when 2
       puts 'Enter the term for which to find the sum:'
@@ -24,12 +24,11 @@ module Sequences
       first = gets.chomp.to_i
       puts 'What is the difference?'
       diff = gets.chomp.to_i
-      find_sum(term, first, diff)
+      self.find_sum(term, first, diff)
       puts 'The sum is ' + @solution.to_s + '.'
     else
       puts 'That is not a valid number. Bye!'
   end
-  
 
   def find_term(term, first, diff)
     @solution = first + (term - 1) * diff
