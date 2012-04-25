@@ -1,23 +1,12 @@
+$: << File.expand_path(File.dirname(__FILE__))  
 require "sequences/version"
 
 module Sequences
-  def start
-    puts 'What do you want to do?'
-    puts '[1]: Find the nth term of a sequence'
-    puts '[2]: Find the sum of a sequence'
-    @method = gets.chomp.to_i
-  end
-
-  def find_term(term, first, diff)
-    @solution = first + (term - 1) * diff
-  end
-
-  def find_sum(term, first, diff)
-    @solution = (term/2) * ((2 * first) + ((term - 1) * diff))
-  end
-
-  start
-
+  puts 'What do you want to do?'
+  puts '[1]: Find the nth term of a sequence'
+  puts '[2]: Find the sum of a sequence'
+  @method = gets.chomp.to_i
+  
   case @method
     when 1
       puts 'Enter the term you want to find:'
@@ -39,6 +28,15 @@ module Sequences
       puts 'The sum is ' + @solution.to_s + '.'
     else
       puts 'That is not a valid number. Bye!'
+  end
+  
+
+  def find_term(term, first, diff)
+    @solution = first + (term - 1) * diff
+  end
+
+  def find_sum(term, first, diff)
+    @solution = (term/2) * ((2 * first) + ((term - 1) * diff))
   end
   
 end
