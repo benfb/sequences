@@ -15,7 +15,6 @@ module Sequences
       first = gets.chomp.to_i
       puts 'What is the difference?'
       diff = gets.chomp.to_i
-      self.find_term(term, first, diff)
       @solution = first + (term - 1) * diff
       puts 'The ' + term.to_s + 'th/rd/st term of the sequence is ' + @solution.to_s + '.'
     when 2
