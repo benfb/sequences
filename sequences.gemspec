@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 require File.expand_path('../lib/sequences/version', __FILE__)
-
+require 'ordinalize'
 Gem::Specification.new do |gem|
   gem.authors       = ["Ben Bailey"]
   gem.email         = ["bennettbailey@gmail.com"]
