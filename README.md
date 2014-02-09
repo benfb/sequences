@@ -1,24 +1,14 @@
-# Sequences
+# Sequences [![Gem Version](https://badge.fury.io/rb/sequences.png)](http://badge.fury.io/rb/sequences)
 
-TODO: Write a gem description
+A simple calculator for arithmetic and geometric sequences. Sequences is no longer being developed, but feel free to contribute.
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'sequences'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install sequences
 
 ## Usage
 
-TODO: Write usage instructions here
+Simply run `sequences` from the command prompt.
 
 ## Contributing
 
