@@ -1,7 +1,6 @@
 $: << File.expand_path(File.dirname(__FILE__))  
 require "sequences/version"
 require "rubygems"
-require "ordinalize"
 
 module Sequences
   puts 'What do you want to do?'
@@ -20,7 +19,7 @@ module Sequences
       puts 'What is the difference?'
       diff = gets.chomp.to_i
       @solution = first + (term - 1) * diff
-      puts 'The ' + term.ordinalize + ' term of the sequence is ' + @solution.to_s + '.'
+      puts 'The ' + term.to_s + ' term of the sequence is ' + @solution.to_s + '.'
     when 2
       puts 'Enter the term for which to find the sum:'
       term = gets.chomp.to_i
@@ -38,7 +37,7 @@ module Sequences
       puts 'What is the ratio?'
       ratio = gets.chomp.to_i
       @solution = first * (ratio ** (term - 1))
-      puts 'The ' + term.ordinalize + ' term of the sequence is ' + @solution.to_s + '.'   
+      puts 'The ' + term.to_s + ' term of the sequence is ' + @solution.to_s + '.'   
     when 4
       puts 'Enter the term for which to find the sum:'
       term = gets.chomp.to_i
