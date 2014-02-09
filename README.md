@@ -1,6 +1,6 @@
 # Sequences [![Gem Version](https://badge.fury.io/rb/sequences.png)](http://badge.fury.io/rb/sequences)
 
-A simple calculator for arithmetic and geometric sequences. Sequences is no longer being developed, but feel free to contribute.
+A simple calculator for arithmetic and geometric sequences. Sequences is no longer being actively developed, but feel free to contribute.
 
 ## Installation
 
